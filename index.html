@@ -160,6 +160,7 @@ nav::after{
 .hero-crest{
   width:clamp(100px,14vw,160px);
   height:auto;
+  margin-top:80px;
   margin-bottom:32px;
   opacity:0;
   animation:fadeUp 1.2s ease 0.2s forwards;
@@ -248,7 +249,9 @@ nav::after{
 .btn-gold{
   background:var(--gold);
   color:var(--ob);
-  padding:20px 56px;
+  padding:20px 0;
+  width:340px;
+  text-align:center;
   font-family:'DM Sans',sans-serif;
   font-size:0.78rem;
   font-weight:500;
@@ -263,7 +266,9 @@ nav::after{
 .btn-ghost{
   border:1px solid var(--dimmed);
   color:var(--muted);
-  padding:19px 56px;
+  padding:19px 0;
+  width:340px;
+  text-align:center;
   font-family:'DM Sans',sans-serif;
   font-size:0.78rem;
   font-weight:300;
@@ -901,6 +906,7 @@ footer{
 @media(max-width:400px){
   .hero-ash{font-size:clamp(4.5rem,26vw,6rem)}
   .hero-showur{font-size:0.85rem;letter-spacing:0.25em}
+  .btn-gold,.btn-ghost{width:min(340px,90vw)}
   .pkg-card{padding:40px 20px}
   .exp-item{padding:36px 20px}
 }
@@ -963,7 +969,6 @@ footer{
 
 <!-- ── NAV ── -->
 <nav>
-  <a href="#" class="nav-brand">Show Ur Ash</a>
   <ul class="nav-links">
     <li><a href="#story">Story</a></li>
     <li><a href="#experience">Experience</a></li>
